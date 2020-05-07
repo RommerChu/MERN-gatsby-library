@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b387b944-570a-4f85-8d41-6b7b2b7c0a8f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../abc-school-gatsby" beforeDir="false" afterPath="$PROJECT_DIR$/../abc-school-gatsby" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1bPF2MnIbrIiIr6OD9e9yxfAk5S" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../react-library" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b387b944-570a-4f85-8d41-6b7b2b7c0a8f" name="Default Changelist" comment="" />
+      <created>1588525613820</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588525613820</updated>
+      <workItem from="1588525615112" duration="6140000" />
+      <workItem from="1588533162609" duration="1539000" />
+      <workItem from="1588534852372" duration="27552000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="4757" y="300" key="FileChooserDialogImpl" timestamp="1588802819635">
+      <screen x="3840" y="0" width="2560" height="1440" />
+    </state>
+    <state x="550" y="174" key="FileChooserDialogImpl/0.0.1536.834/3840.0.2560.1440@0.0.1536.834" timestamp="1588539395934" />
+    <state x="4757" y="300" key="FileChooserDialogImpl/0.0.1536.834/3840.0.2560.1440@3840.0.2560.1440" timestamp="1588802819635" />
+    <state x="4072" y="360" width="917" height="801" key="dock-window-1" timestamp="1588539225683">
+      <screen x="3840" y="0" width="2560" height="1440" />
+    </state>
+    <state x="4072" y="360" width="917" height="801" key="dock-window-1/0.0.1536.834/3840.0.2560.1440@3840.0.2560.1440" timestamp="1588539225683" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/models/teacher.js</url>
+          <line>7</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
