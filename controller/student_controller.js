@@ -3,6 +3,7 @@ const {validationResult} = require('express-validator')
 
 
 const Student = require('../models/student')
+const Teacher = require('../models/teacher')
 
 /////INDEX STUDENT
 async function index(require, response, next){
@@ -12,7 +13,7 @@ async function index(require, response, next){
     }catch (e) {
         return response.status(417).json({message:e})
     }
-    res.status(200).json({students})
+    response.status(200).json({students})
 }
 
 
@@ -159,4 +160,5 @@ exports.showStudent = show
 exports.storeStudent = store
 exports.updateStudent = update
 exports.deleteStudent = deleteStudent
+exports.StudentByTeacher = StudentByTeacher
 
