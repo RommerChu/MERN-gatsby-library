@@ -1,4 +1,3 @@
-const uuid = require('uuid/4')
 const {validationResult} = require('express-validator')
 
 
