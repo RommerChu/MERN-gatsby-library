@@ -3,8 +3,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 
 const studentRoutes = require('./routes/student_routes')
-const teacherRoutes = require('.routes/teacher_routes')
-
+const teacherRoutes = require('./routes/teacher_routes')
 
 const app = express();
 
@@ -16,8 +15,8 @@ app.use((require,response,next)=>{
     next();
 })
 
-app.use('/api/student', studentRoutes)
-app.use('/api/student', teacherRoutes)
+app.use('/api/students', studentRoutes)
+app.use('/api/teachers', teacherRoutes)
 
 //MONGODB CONNECTION
 mongoose.connect("mongodb+srv://abc123:abc12345@abc-school-yygyf.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true, useUnifiedTopology: true})

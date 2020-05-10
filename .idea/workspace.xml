@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b387b944-570a-4f85-8d41-6b7b2b7c0a8f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../abc-school-gatsby" beforeDir="false" afterPath="$PROJECT_DIR$/../abc-school-gatsby" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/student_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/student_controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/teacher_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/teacher_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/teacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/teacher.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/student_routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/student_routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/teacher_routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/teacher_routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +47,9 @@
       <workItem from="1588533162609" duration="1539000" />
       <workItem from="1588534852372" duration="27555000" />
       <workItem from="1588893489893" duration="3762000" />
-      <workItem from="1588976690755" duration="1455000" />
+      <workItem from="1588976690755" duration="3943000" />
+      <workItem from="1588982459888" duration="1290000" />
+      <workItem from="1589060847105" duration="6371000" />
     </task>
     <servers />
   </component>
@@ -53,11 +57,11 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="4757" y="300" key="FileChooserDialogImpl" timestamp="1588976704598">
+    <state x="4757" y="300" key="FileChooserDialogImpl" timestamp="1589060869288">
       <screen x="3840" y="0" width="2560" height="1440" />
     </state>
     <state x="550" y="174" key="FileChooserDialogImpl/0.0.1536.834/3840.0.2560.1440@0.0.1536.834" timestamp="1588539395934" />
-    <state x="4757" y="300" key="FileChooserDialogImpl/0.0.1536.834/3840.0.2560.1440@3840.0.2560.1440" timestamp="1588976704598" />
+    <state x="4757" y="300" key="FileChooserDialogImpl/0.0.1536.834/3840.0.2560.1440@3840.0.2560.1440" timestamp="1589060869288" />
     <state x="4072" y="360" width="917" height="801" key="dock-window-1" timestamp="1588539225683">
       <screen x="3840" y="0" width="2560" height="1440" />
     </state>
