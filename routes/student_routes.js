@@ -3,6 +3,7 @@ const router = express.Router()
 
 const {check} = require('express-validator')
 
+
 const studentsController = require('../controller/student_controller')
 
 router.get('/', studentsController.index)

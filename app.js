@@ -19,6 +19,11 @@ app.use('/api/students', studentRoutes)
 app.use('/api/teachers', teacherRoutes)
 
 //MONGODB CONNECTION
+
+
+
+
+
 mongoose.connect("mongodb+srv://abc123:abc12345@abc-school-yygyf.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true, useUnifiedTopology: true})
 .then(()=>{
     app.listen(5000)
