@@ -29,6 +29,19 @@ const show = async (require,response,next)=> {
 }
 
 
+const TeacherByStudent = async (require, response, next)=>{
+
+    const studentId =  require.params.teacherId
+    const  teacher = await Teacher.find({student:studentId});
+
+    if(student.length == 0){
+        return response.status(404).json({message:"Invalid teacher id!"})
+    }
+    return res.status(200).json({student})
+
+}
+
+
 
 
 /////STORE - CREATING NEW TEACHER
@@ -157,4 +170,5 @@ exports.show = show
 exports.store = store
 exports.update = update
 exports.delete = deleteTeacher
+exports.TeacherByStudent = TeacherByStudent
 
