@@ -16,8 +16,8 @@ app.use((require,response,next)=>{
     next();
 })
 
-app.use('/api/student', studentRoutes)
-app.use('/api/student', teacherRoutes)
+app.use('/api/students', studentRoutes)
+app.use('/api/teachers', teacherRoutes)
 
 //MONGODB CONNECTION
 

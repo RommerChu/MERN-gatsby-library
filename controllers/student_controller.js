@@ -46,7 +46,6 @@ const StudentByTeacher = async (require, response, next)=>{
 /////STORE
 const store = async (require,response)=>{
 
-    const id = require.body.id
     const firstName = require.body.firstName
     const middleName = require.body.middleName
     const lastName = require.body.lastName
@@ -60,8 +59,8 @@ const store = async (require,response)=>{
 
     /////ERROR VALIDATION
     const error = validationResult(require)
-    if(error.isEmpty()){
-        return res.status(422).json({message:error})
+    if(!error.isEmpty()){
+        return response.status(422).json({message:error})
     }
     ////NEW STUDENT
     const newStudent = new Student({
@@ -79,9 +78,9 @@ const store = async (require,response)=>{
     try{
         await newStudent.save()
     }catch (e) {
-        return response(422).json({message:"Student not saved!"})
+        return response.status(422).json({message:"Student not saved!"})
     }
-    return response().json({student: newStudent})
+    return response.json({student: newStudent})
 }
 
 
