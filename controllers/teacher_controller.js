@@ -81,9 +81,9 @@ const store = async (require,response)=>{
     try{
         await newTeacher.save()
     }catch (e) {
-        return response(422).json({message:"Teacher not saved!"})
+        return response.status(422).json({message:"Teacher not saved!"})
     }
-    return response().json({teacher: newTeacher})
+    return response.status(201).json({teacher: newTeacher})
 }
 
 
@@ -146,12 +146,12 @@ const deleteTeacher = async (require,response) =>{
         return response.status(422).json({message:e})
     }
 
-    /////1st if STUDENT removed from teacher
-    try{
-        await Student.remove({teacher_id:teacherId})
-    }catch (e) {
-        return response.status(422).json({message:"Unable to delete student"})
-    }
+    // /////1st if STUDENT removed from teacher
+    // try{
+    //     await Student.remove({teacher_id:teacherId})
+    // }catch (e) {
+    //     return response.status(422).json({message:"Unable to delete student"})
+    // }
 
     /////2nd if TEACHER removed
     try{
