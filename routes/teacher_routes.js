@@ -3,7 +3,7 @@ const router = express.Router()
 
 const { check } = require('express-validator')
 
-const teacherController = require('../controllers/teacher_controller')
+const teacherController = require('../controller/teacher_controller')
 
 router.get('/',teacherController.index)
 router.get('/:teacher_id', teacherController.show)

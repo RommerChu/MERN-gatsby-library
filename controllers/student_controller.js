@@ -154,9 +154,9 @@ const deleteStudent = async (require, response) =>{
 
 /////   EXPORTS
 exports.index = index
-exports.showStudent = show
-exports.storeStudent = store
-exports.updateStudent = update
-exports.deleteStudent = deleteStudent
+exports.show = show
+exports.store = store
+exports.update = update
+exports.delete = deleteStudent
 exports.StudentByTeacher = StudentByTeacher
 

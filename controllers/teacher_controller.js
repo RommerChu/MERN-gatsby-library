@@ -47,7 +47,7 @@ const store = async (require,response)=>{
 
     /////ERROR VALIDATION
     const error = validationResult(require)
-    if(error.isEmpty()){
+    if(!error.isEmpty()){
         return response.status(422).json({message:error})
     }
     ////NEW TEACHER
@@ -63,6 +63,8 @@ const store = async (require,response)=>{
         section,
     })
 
+
+
     try{
         await newTeacher.save()
     }catch (e) {
@@ -75,7 +77,7 @@ const store = async (require,response)=>{
 
 
 ////UPDATE
-const update  = async (require, response) => {
+const update  = async (require,response) => {
 
     const teacher_id = require.params.teacher_id
 

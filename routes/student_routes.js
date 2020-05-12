@@ -3,14 +3,15 @@ const router = express.Router()
 
 const {check} = require('express-validator')
 
-const studentController = require('../controllers/student_controller')
 
-router.get('/', studentController.index)
-router.get('/:student_id',studentController.showStudent)
-router.get('/student/:student_id', studentController.StudentByTeacher)
-router.post('/',[check('firstName'||'lastName').not().isEmpty()],studentController.storeStudent)
-router.patch('/:student_id',studentController.updateStudent)
-router.delete('/:student_id',studentController.deleteStudent)
+const studentsController = require('../controller/student_controller')
+
+router.get('/', studentsController.index)
+router.get('/:student_id',studentsController.show)
+router.get('/student/:student_id', studentsController.StudentByTeacher)
+router.post('/',[check('firstName'||'lastName').not().isEmpty()],studentsController.store)
+router.patch('/:student_id',studentsController.update)
+router.delete('/:student_id',studentsController.delete)
 
 
 module.exports = router

@@ -15,6 +15,7 @@ const teacherSchema = new Schema({
     }],
     telephone:{type:String, require:true},
     email:{type:String, require:true},
+    student: [{type: mongoose.Types.ObjectId, required:true,ref:'Student'}]
 
 })
 

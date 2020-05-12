@@ -5,7 +5,6 @@ const mongoose = require('mongoose')
 const studentRoutes = require('./routes/student_routes')
 const teacherRoutes = require('./routes/teacher_routes')
 
-
 const app = express();
 
 app.use(bodyParser.json())
