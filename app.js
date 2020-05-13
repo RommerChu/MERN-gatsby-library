@@ -8,7 +8,7 @@ const teacherRoutes = require('./routes/teacher_routes')
 const app = express();
 
 app.use(bodyParser.json())
-app.use((require,response,next)=>{
+app.use((req,response,next)=>{
     response.setHeader('Access-Control-Allow-Origin','*')
     response.setHeader('Access-Control-Allow-Headers','Origin, Content-Type , Accept')
     response.setHeader('Access-Control-Allow-Methods','GET, POST, PATCH, DELETE')

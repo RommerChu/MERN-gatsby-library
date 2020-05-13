@@ -12,6 +12,10 @@ async function index(require, response, next){
     }catch (e) {
         return response.status(417).json({message:e})
     }
+
+
+    console.log("Ffff");
+
     response.status(200).json({students})
 }
 
@@ -130,7 +134,10 @@ const update  = async (require, response) => {
 /////DELETE
 const deleteStudent = async (req, res) =>{
 
-    const studentId = req.params.studentId
+    const studentId = req.params.student_id
+
+
+    console.log(studentId)
 
     // let student;
     // try{
@@ -140,8 +147,7 @@ const deleteStudent = async (req, res) =>{
     // }
 
     try{
-        student = await Student.findById(studentId
-        )
+        student = await Student.findById(studentId)
     }catch (e) {
         return res.status(422).json({message:e})
     }
