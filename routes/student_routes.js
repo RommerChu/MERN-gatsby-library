@@ -11,7 +11,7 @@ router.get('/:student_id',studentsController.show)
 router.get('/student/:student_id', studentsController.StudentByTeacher)
 router.post('/',[check('firstName'||'lastName').not().isEmpty()],studentsController.store)
 router.patch('/:student_id',studentsController.update)
-router.delete('/:student_id',studentsController.delete)
+router.delete('/:student_id', studentsController.delete)
 
 
 module.exports = router

@@ -128,9 +128,9 @@ const update  = async (require, response) => {
 
 
 /////DELETE
-const deleteStudent = async (student_id) =>{
+const deleteStudent = async (req, res) =>{
 
-    const studentId = require.params.studentId
+    const studentId = req.params.studentId
 
     // let student;
     // try{
@@ -140,13 +140,20 @@ const deleteStudent = async (student_id) =>{
     // }
 
     try{
-        await student.remove()
-        student.teacher_id.student.pull(student)
-        await student.teacher_id.save()
+        student = await Student.findById(studentId
+        )
     }catch (e) {
-        return response.status(417).json({message:e})
+        return res.status(422).json({message:e})
     }
-    response.status(202).json({message:"Student successfully deleted."})
+
+    try{
+        await student.remove()
+    }catch (e) {
+        return res.status(417).json({message:e})
+    }
+
+    res.status(202).json({message:"Student successfully deleted."})
+
 }
 
 
