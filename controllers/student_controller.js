@@ -2,7 +2,7 @@ const {validationResult} = require('express-validator')
 
 
 const Student = require('../models/student')
-const Teacher = require('../models/teacher')
+// const Teacher = require('../models/teacher')
 
 /////INDEX STUDENT
 async function index(require, response, next){
@@ -37,7 +37,7 @@ const StudentByTeacher = async (require, response, next)=>{
     if(student.length == 0){
         return response.status(404).json({message:"Invalid teacher id!"})
     }
-    return res.status(200).json({student})
+    return response.status(200).json({student})
 
 }
 
@@ -89,7 +89,6 @@ const store = async (require,response)=>{
 const update  = async (require, response) => {
 
     const student_id = require.params.student_id
-
     const firstName = require.body.firstName
     const middleName = require.body.middleName
     const lastName = require.body.lastName
@@ -129,16 +128,16 @@ const update  = async (require, response) => {
 
 
 /////DELETE
-const deleteStudent = async (require, response) =>{
+const deleteStudent = async (student_id) =>{
 
     const studentId = require.params.studentId
 
-    let student;
-    try{
-        student = await Student.findById(studentId).populate('teacher_id')
-    }catch (e) {
-        return response.status(422).json({message:e})
-    }
+    // let student;
+    // try{
+    //     student = await Student.findById(studentId).populate('teacher_id')
+    // }catch (e) {
+    //     return response.status(422).json({message:e})
+    // }
 
     try{
         await student.remove()
