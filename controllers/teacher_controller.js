@@ -135,16 +135,16 @@ const update  = async (require,response) => {
 
 
 /////DELETE
-const deleteTeacher = async (require,response) =>{
+const deleteTeacher = async (req, res) =>{
 
-    const teacherId = require.params.teacherId
+    const teacherId = req.params.teacher_id
 
-    let teacher;
-    try{
-        teacher = await Teacher.findById(teacherId)
-    }catch (e) {
-        return response.status(422).json({message:e})
-    }
+    // let teacher;
+    // try{
+    //     teacher = await Teacher.findById(teacherId)
+    // }catch (e) {
+    //     return response.status(422).json({message:e})
+    // }
 
     // /////1st if STUDENT removed from teacher
     // try{
@@ -155,11 +155,17 @@ const deleteTeacher = async (require,response) =>{
 
     /////2nd if TEACHER removed
     try{
+        teacher = await Teacher.findById(teacherId)
+    }catch (e) {
+        return res.status(422).json({message:e})
+    }
+
+    try{
         await teacher.remove()
     }catch (e) {
-        return response.status(417).json({message:e})
+        return res.status(417).json({message:e})
     }
-    response.status(202).json({message:"Teacher deleted"})
+    response.status(202).json({message:"successfully deleted."})
 }
 
 
